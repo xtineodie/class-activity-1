@@ -21,7 +21,9 @@ The variables are:
 `datetime` - the date and time the student attempted the question  
 `hash` - anonomyzed student ID  
 
-5. Create a new data frame that only includes the variables `hash`, `skipped` and `datetime` called `DF2` 
+5a. Create a new data frame that only includes the variables `hash`, `skipped` and `datetime` called `DF2a` 
+
+5b. Create a data frame that is just the first 10 rows of `DF2a` called `DF2`
 
 6. On a scrap piece of paper draw what you think `DF2` would look like in wide format
 
