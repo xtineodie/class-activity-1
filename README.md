@@ -33,7 +33,7 @@ The variables are:
 
 10. Convert the `correct` variable so that `TRUE` is coded as the **number** `1` and `FALSE` is coded as `0`  
 
-11. Create a new data frame that called `DF4` that provides a mean score for each student
+11. Create a new data frame that called `DF4` that provides a mean score for each student on each course
 
 12. **Extra credit** Convert the `datetime` variable into month-day-year format and create a new data frame (`DF5`) that shows the average correct for each day
 
