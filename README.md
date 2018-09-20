@@ -25,11 +25,11 @@ The variables are:
 
 6. Use the `group_by` function to create a data frame that sums all the attempts for each `hash` by each `lesson_name` called `DF3`
 
-7. On a scrap piece of paper draw what you think `DF2` would look like if all the lesson names were column names
+7. On a scrap piece of paper draw what you think `DF3` would look like if all the lesson names were column names
 
-8. Convert `DF2` to this format  
+8. Convert `DF3` to this format  
 
-9. Create a new data frame from `DF1` called `DF3` that only includes the variables `hash` and `correct`
+9. Create a new data frame from `DF1` called `DF4` that only includes the variables `hash` and `correct`
 
 10. Convert the `correct` variable so that `TRUE` is coded as the **number** `1` and `FALSE` is coded as `0`  
 
