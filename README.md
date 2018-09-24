@@ -29,11 +29,11 @@ The variables are:
 
 8. Convert `DF3` to this format  
 
-9. Create a new data frame from `DF1` called `DF4` that only includes the variables `hash` and `correct`
+9. Create a new data frame from `DF1` called `DF4` that only includes the variables `hash`, `lesson_name` and `correct`
 
 10. Convert the `correct` variable so that `TRUE` is coded as the **number** `1` and `FALSE` is coded as `0`  
 
-11. Create a new data frame that called `DF4` that provides a mean score for each student on each course
+11. Create a new data frame that called `DF5` that provides a mean score for each student on each course
 
-12. **Extra credit** Convert the `datetime` variable into month-day-year format and create a new data frame (`DF5`) that shows the average correct for each day
+12. **Extra credit** Convert the `datetime` variable into month-day-year format and create a new data frame (`DF6`) that shows the average correct for each day
 
