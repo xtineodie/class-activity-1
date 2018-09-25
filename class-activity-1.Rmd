@@ -1,0 +1,47 @@
+---
+title: "class activity 1"
+author: "Charles Lang"
+date: "9/24/2018"
+output: html_document
+---
+
+```{r}
+#3.
+library(dplyr)
+library(tidyr)
+
+#4.
+DF1 <- read.csv("swirl-data.csv")
+
+#5.
+DF2 <- select(DF1, hash, lesson_name, attempt)
+
+#6.
+DF3 <- DF2 %>% group_by(hash, lesson_name) %>% summarise(attempt = sum(attempt))
+
+#7./8.
+DF3b <- spread(DF3, lesson_name, attempt)
+
+#9.
+DF4 <- select(DF1, hash, lesson_name, correct)
+
+#10.
+DF4$correct <- ifelse(DF4$correct == TRUE, 1, 
+                      ifelse(DF4$correct == NA, NA, 0))
+
+#11.
+DF5 <- DF4 %>% group_by(hash, lesson_name) %>% summarise(mean.correct = mean(correct, na.rm = TRUE))
+
+# Extra Credit
+
+DF6 <- select(DF1, correct, datetime)
+
+DF6$correct <- ifelse(DF6$correct == TRUE, 1, 0)
+
+DF6$datetime <- as.POSIXlt(DF6$datetime, origin = "1970-01-01 00:00.00 UTC")
+
+DF6$datetime <- strftime(DF6$datetime, format="%b:%e")
+
+DF7 <- DF6 %>% group_by(datetime) %>% summarise(av.correct = mean(correct, na.rm = TRUE))
+```
+
